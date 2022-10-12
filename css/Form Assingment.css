@@ -1,0 +1,46 @@
+body{
+	background-image: url("./img/food.jpg");
+	background-size: cover;
+
+
+}
+label{
+	width: 200px;
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 4px;
+	font-family: arial ;
+}
+
+
+.input{
+	width: 200px;
+	text-align-last: center;
+	color: deepskyblue;
+
+}
+.btn{
+	width: 200px;
+	background-color: lightskyblue;
+}
+
+h1{
+	text-align-last: center ;
+	color: dodgerblue;
+	font-size: 35pt;
+	font-family: arial;
+}
+
+.input2{
+	text-align: center;
+	color: deepskyblue;
+}
+
+#text{
+	color: deepskyblue;
+}
+
+#select-food{
+	padding: 0px 20px;
+	background-color: blue;
+}

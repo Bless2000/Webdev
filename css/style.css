@@ -1,0 +1,47 @@
+body{
+	background: radial-gradient(red, blue);
+	text-align: justify;
+	
+	}
+
+h2:hover {
+	color: red;
+}
+.subtitle{
+	color: blue;
+}
+
+#services{
+	color: yellow;
+}
+
+/*li:nth-child(1){
+	color: steelblue;
+}*/
+/*
+#google-link:link{
+	color: yellow;
+}
+
+#google-link:visited{
+	color: red;
+}
+*/
+
+h2 + a{
+	color: yellow;
+}
+
+ul > li{
+	color: yellow;
+}
+
+ul li{
+	color: green;
+}
+
+.about-us{
+	background: url("naurto.jpg");
+	background-size: contain;
+	}
+

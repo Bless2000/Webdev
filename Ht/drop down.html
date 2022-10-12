@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/drop.css">	
+		
+	<title>Drop-Down menu Design</title>
+	<script type="text/javascript">
+		var name, pass;
+
+		function Check()
+			{
+				name = document.getElementById("name").value;
+				pass = document.getElementById("pass").value;
+
+				if(name.length == " ")
+				{
+					alert("enter Username");
+				}
+				else if(pass.length == " ")
+				{
+					alert("enter Password");
+				}
+
+				else
+				{
+					alert("WELCOME "+name);
+				}
+
+			}
+
+		function Clear()
+			{
+				name= document.getElementById("name").value="";
+				pass= document.getElementById("pass").value="";
+			}
+
+
+	</script>
+</head>
+<body>
+	<div class="menu">
+		<nav>
+				<p>BLESS</p>
+
+		<ul>
+			<li class="active"><a href="">Home</a></li>
+			<li class="active"><a href="">About Us</a></li>
+			<li class="active"><a href="">Services</a></li>
+			<li class="active"><a href="">Clients</a></li>
+			<li class="active"><a href="">Investors</a></li>
+			<li class="active"><a href="">Pricing</a></li>
+			<li class="active"><a href="">Training</a></li>
+			<li class="active"><a href="">Contact</a></li>
+		</ul>
+	</nav>
+	</div>
+	<div class="form">
+		<h2>LOG<span>IN</span></h2><br>
+	
+		<label>Username: </label>
+		<input type="text" id="name" class="input"><br>
+		<label>Password: </label>
+		<input type="Password" id="pass" class="input"><br>
+		<input type="button" value="submit" id="submit" onclick="Check()"/>
+		<input type="button" value="clear" id="clear" onclick="Clear()">
+		
+	</div>
+
+	<button><a href="sign up.html" target="_blank">Sign Up</a></button>
+
+	<div class="img">
+		<img src="../css/img/pattern.png" class="man">
+	</div>
+
+	<footer class="foot">
+					<ul>
+				<li><a href="">French</a></li>
+				<li><a href="">German</a></li>
+				<li><a href="">Dutch</a></li>
+				<li><a href="">Japanese</a></li>
+				<li><a href="">Chinese</a></li>
+				<li><a href="">Spanish</a></li>
+				<li><a href="">Portugese</a></li>
+				
+			</ul><br><hr>	
+			
+			<ul><li>Help</li></ul>
+		
+	</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/css' href='ex2 CSS.css'?>
+
+<EmployeeDetails>
+	<Employee ID='E100'>
+	<FullName>James Jackson</FullName>
+	<Age>28</Age>
+	<Department>Finanace</Department>
+	<Salary>Ghc 2500</Salary>
+	</Employee>
+</EmployeeDetails>

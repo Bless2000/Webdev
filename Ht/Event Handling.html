@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event Handling</title>
+
+<style type="text/css">
+	h1,h3{
+		color: black;
+		Font-size: 40px;
+		text-align: center;
+
+	}
+	#button{
+		margin-left: 740px;
+	}
+</style>
+
+<script type="text/javascript">
+	
+	function show()
+	{
+		var fname= document.getElementById("txtbox1").value;
+		var lname= document.getElementById("txtbox2").value;
+		var age= document.getElementById("age").value;
+		var address= document.getElementById("address").value;
+		var gender= document.getElementById("gender").value;
+		confirm("You have entered "+"\n Name: "+fname+ " "+lname+"\n Age: "+age+"\n Address: "+address+"\n Gender: "+gender+" \n\n Do you want to confirm these details?"); 
+
+	}
+	function changeColor(val){
+		if((val.value=="")||(val.value==null))
+	{
+		val.style.background="pink";
+	}
+	else
+	{
+		val.style.background="#FFFFFF";
+	}
+	}
+</script>
+</head>
+<body>
+	<h1>User RegisterDetails <hr></h1>
+	<h3>Please fill the following details and get registered !!</h3><br><br>
+	<table align="center" border="2" bordercolor="white" cellpadding="10px" bgcolor-"beige">
+		<tr>
+			<td>First name: </td>
+			<td><input type="text" name="name1" id="txtbox1" onblur="changeColor(this)"/></td>
+		</tr><tr>
+			<td>Last name:</td>
+			<td><input type="text" name="name2" id="txtbox2" onblur="changeColor(this)"/></td>
+		</tr>
+		<tr>
+			<td>Age: </td>
+			<td><input type="text" name="age_box" id="age" onblur="changeColor(this)"/></td>
+		</tr>
+		<tr>
+			<td>Address: </td>
+			<td><textarea rows="5" name="address_box" id="address" onblur="changeColor(this)"></textarea></td>
+		</tr>
+		<tr>
+			<td>Gender: </td>
+			<td><select name="Gender" id="gender">
+				<option value="Male">Male</option>
+				<option value="Female">Female </option>
+			</select></td>
+		</tr>
+	</table>
+	<br/>
+	<input type="button" id="button" value="Register Me" ondblclick= "show()"/>
+</body>
+</html>

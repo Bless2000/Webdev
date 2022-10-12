@@ -1,0 +1,105 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+.hero
+{
+	height: 100%;
+	width: 100%;
+	background: lightgrey;
+	position: relative;
+}
+
+nav
+{
+	width: 84%;
+	margin:  auto;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family:  Montserrat Thin;
+}
+.logo{
+width: 100px;
+cursor: pointer;
+}
+
+nav ul li
+{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+
+nav ul li a
+{
+	cursor: pointer;
+	text-decoration: none;
+	color: black ;
+}
+
+nav ul li a:hover
+
+
+
+{
+	color: red;
+}
+
+.info
+{
+	margin-left: 8%;
+	margin-top: 15%;
+	font-family: Nunito;
+}
+span
+{
+	color: red;
+	font-family: Nunito;
+}
+.info p
+{
+	color: black;
+	line-height: 22px;
+}
+
+.info a 
+{
+	background: #212121;
+	padding: 10px 18px;
+    text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	margin: 30px 0;
+	border-radius: 5px;
+}
+
+
+.img
+{
+	width: 45%;
+	height: 80%;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+.img img
+{
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	transition: bottom 1s, left 1s;
+}
+.img:hover .black-img{
+	bottom: 40px;
+}
+
+.img:hover .main-img
+{
+	left:54% ;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Validation</title>
+
+<script type="text/javascript">
+	
+				var un, pass;
+
+		function Check()
+		{
+			un = document.getElementById("txtUN").value;
+			pass = document.getElementById("psPass").value;
+			 	if(un.length == "")
+			 	{
+			 		alert("Username cannot be left empty.");
+			 	}
+			 	else if(pass.length == "")
+			 	{
+			 		alert("Password cannot be left empty.");
+			 	}
+			 	else
+			 	{
+			 		alert("Welcome "+un);
+			 	}
+
+}			 	function Clear()
+			 	{
+			 		document.getElementById("txtUN").value = "";
+			 		document.getElementById("psPass").value = "";
+
+			 	}	
+		
+</script>
+</head>
+<body>
+	<fieldset>
+		<legend>Login Details</legend>
+
+	<table>
+		<tr>
+			<td><Label>Username: </Label>
+			<td><input type="textbox" id="txtUN">
+			</td>
+		</tr>
+		<tr>	
+			<td><Label>Password: </Label>
+				<td><input type="textbox" id="psPass">
+			</td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Submit" onclick="Check()"></td>
+			<td><input type="button" value="Clear" onclick="Clear()"></td>
+		</tr>
+	</table>
+	</fieldset>
+</body>
+</html>

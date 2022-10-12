@@ -1,0 +1,13 @@
+FullName,Age,Department,Salary
+{
+ 	color: #ffffff
+	letter-spacing: 5px;
+	display:block;
+	background-color:black;
+	text-align: center;
+	font-size: 30px;
+	font-family:Harrington;
+	text-shadow: 0px 2px 3px pink, 1px 2px 3px red, 5px 4px 0px blue;
+
+
+}

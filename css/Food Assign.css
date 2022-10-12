@@ -1,0 +1,37 @@
+h1
+{
+	text-align: center;
+	font-size: xx-large;
+	font-family: Montserrat Thin;
+	color: #b32235 ;
+
+}
+
+body
+{
+	background-image: url("./img/food.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.label{
+
+	
+	display: inline-block;
+	padding: 0px 20px;
+	margin: 4px;
+	font-family: Nunito;
+	font-weight: 600;
+}
+
+
+.input{
+	width: 200px;
+	text-align-last: center;
+	color: deepskyblue;
+
+}
+.buttons{
+	width: 200px;
+	background-color: lightskyblue;
+}
+

@@ -1,0 +1,30 @@
+body{
+	background-color: lightcyan;
+}
+
+h1{
+	color: red;
+	font-family: arial;
+	text-align: center;
+	padding: 20px 4px;
+	background-color: skyblue;
+}
+
+.subtitle{
+	color: darkred;
+	font-family: times;
+	width: 200px;
+	padding: 0px 20px;
+}
+
+.para-text{
+	font-family: arial;
+	font-size: 16;
+
+}
+
+li {
+	color: darkblue;
+	font-size: 16;
+	font-family: arial;
+}

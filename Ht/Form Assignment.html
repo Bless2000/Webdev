@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/Form Assingment.css">
+	<title>
+		Input Tags
+	</title>s
+	<script type="text/javascript">
+		var name, date, em, contact, text, state, resturant,food, foods, dishes, soups, order, drinks;
+
+		 function Check()
+	{
+		 	name= document.getElementById("name").value;
+		 	date= document.getElementById("date").value;
+		 	em= document.getElementById("em").value;
+		 	contact= document.getElementById("contact").value;
+		 	text= document.getElementById("text").value;
+		 	state= document.getElementById("state").value;
+		 	resturant= document.getElementById("resturant").value;
+		 	foods= document.getElementById("foods").value;
+		 	drinks= document.getElementById("drinks").value;
+		 	order= document.getElementById("order").value;
+		 	dishes= document.getElementById("dishes").value;
+		 	soups = document.getElementById("soups").value;
+
+
+
+
+		 		
+		 	
+		 	
+		 	if(name.length== "")
+		 	{
+		 		alert("Name cannot be left empty");
+		 	}
+		 	else if(date.length== "")
+		 	{
+		 		alert("date cannot be left empty");
+		 	}
+		 	else if(em.length== "")
+		 	{
+		 		alert("email cammot be left empty");
+		 	}
+		 	else if(contact.length== "")
+		 	{
+		 		alert("need to put in your contact");
+		 	}
+		 	else if(isNaN(contact))
+		 	{
+		 		alert("You need to put in your telephone number");
+		 	}
+		 	else if(foods == "")
+		 	{
+		 		alert("Please select one");
+		 	}
+			else if(resturant =="Select Resturant")
+
+	 		{
+	 			alert("Please select the resturant");
+	 		}
+	 		else if (drinks== "Select your Drink")
+	 		{
+	 			alert("Please select your drink");
+	 		}
+	 		else if(soups== "Select the soup of your choice")
+	 		{
+	 			alert("Please choose a soup");
+	 		}
+	 		else if (dishes== "Select the dish of your choice")
+	 		{
+	 			alert("Select a dish from the list");
+	 		}
+	 		else if(order== "")
+	 		{
+	 			alert("Please choose your order");
+	 		}
+			else if(text.length== "")
+		 	{
+		 		alert("address needed to continue");
+		 	}
+		 	else if(state.length== "")
+		 	{
+		 		alert("state needed");
+		 	}
+		 	
+		 	else
+		 	{
+		 		alert("Order Placed");
+		 	}
+		 }
+
+		 function Reset()
+		 {
+		 	document.getElementById("name").value="";
+		 	document.getElementById("date").value="";
+		 	document.getElementById("em").value="";
+		 	document.getElementById("contact").value="";
+		 	document.getElementById("text").value="";
+		 	document.getElementById("state").value="";
+
+		 }
+
+	</script>
+</head>
+<body>
+	<div id='form'>
+		<h1>OrderFoodOnline</h1><hr>
+		<form>
+			<label><b>Name:</b> </label> <input type='text' id= "name" placeholder="Enter Name" class="input2"/><br>
+			<label><b>Date:</b> </label> <input type='date'class="input2" id="date"/><br>
+			<br>
+			<label><b>email ID: </b></label> <input type='text'  id= "em" placeholder="Enter email" class="input2"/><br>
+			<br>
+			<label><b>Contact Number:<b> </label> <input type='text' placeholder="Enter phone number" class= 'input' id="contact" class="input2"/><br/>
+			<br/>
+			<label><b>Select Food: <b></label>
+			<input type="radio" name="food" id="foods"><b>Non-Vegetarian</b></input>
+			<input type="radio" name="food"  id="foods"><b>Vegetarian</b></input><br><br>
+			<label><b>Select Resturant: </b></label> 
+			<select id="resturant">
+				<option>Select Resturant</option>
+				<option>Papaye</option>
+				<option>Mawako</option>
+				<option>Treat</option>
+				<option>Gees</option>
+			</select> 
+			<br><br>
+			<label><b>Drinks:</b> </label><select id="drinks">
+				<option>Select Your Drink</option>
+				<option>Coa Cola</option>
+				<option>Sprite</option>
+				<option>Fanta</option>
+
+			</select><br><br>
+			<label><b>Soups: </b></label><select id="soups">
+				<option>Select the Soup of Your Choice</option>
+				<option>Light Soup</option>
+				<option>Palm-nut</option>
+				<option>Groundnut</option>
+
+				
+			</select><br><br>
+			<label><b>Dishes:</b> </label><select id="dishes
+			">
+				<option>Select the Dish of Your Choice</option>
+				<option>Rice</option>
+				<option>Jollof</option>
+				<option>Banku</option>
+
+			</select><br><br>
+			<label><b>Order For:</b></label> Take Away<input name='btn' type='radio' id="order"/><b>  Home Delivery</b></label><input name='btn' type='radio' id="order" /><br><br>
+			<label><b>Address: </b></label><textarea id='text' placeholder="Eneter Address
+			"></textarea><br><br>
+			<label><b>State:</b> </label><input type='text' placeholder="enter state" class="input2" id= "state"/><br><br>
+			<input type='submit'class='btn' value= 'Submit' onclick="Check()">  <input type='reset' class='btn' value='Reset' onclick="Reset()"><br>
+
+		</form>
+	</div>
+</body>
+</html>

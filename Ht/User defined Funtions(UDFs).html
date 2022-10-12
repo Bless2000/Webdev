@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UDFs</title>
+</head>
+<body>
+
+	<h1>User-defined Functions</h1>
+
+	<script type="text/javascript">
+		let name="";
+		let age = 0;
+		let gen = "";
+
+		function acceptInfo()
+				{
+					name = prompt("Enter your full name");
+					age = prompt("Enter your age");
+					gen = prompt("Enter your gender")
+				}
+
+		function displayInfo()
+				{
+					alert("Full Name: "+name+"\n"+"Age: "+age+"\n"+"Gender: "+gen);
+				}
+
+					//invoking the function
+					acceptInfo();
+					displayInfo();
+
+
+	</script>
+</body>
+</html>

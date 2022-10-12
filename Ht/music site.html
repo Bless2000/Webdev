@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/music site.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <img src="../css/logo.png" alt="" class="logo">
+                <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SPECIFICATION</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">CONNECT</a></li>
+                </ul>
+            </div>
+        </div>    
+
+        <div class="content">
+            <div class="col-1">
+                    <h1>It's <br> Music Bro</h1>
+            </div>
+            <div class="col-2">
+                    <p>Click To Listen</p>
+                    <img src="../css/play.png" alt="" id="icon">
+            </div>
+
+            <audio id= 'mysong' src="../css/Detroit vs. Everybody CD 1 TRACK 1 (320).mp3" type="audio/mp3"></audio>
+
+            <script>
+                var mysong = document.getElementById("mysong");
+                var icon = document.getElementById("icon");
+
+                icon.onclick = function(){
+                   if(mysong.paused){
+                    mysong.play();
+                    icon.src = "../css/pause.png";
+                   }
+                   else
+                   {mysong.pause()
+                    icon.src = "../css/play.png";
+                    }
+                }
+            </script>
+</body>
+</html>

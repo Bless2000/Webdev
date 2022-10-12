@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This is a comment in XMl -->
+
+<StudentProfile>
+<Student ID='S100'>
+		<FullName>James Jackson</FullName>
+		<Age>25</Age>
+		<Gender>Male</Gender>
+		<Course>MIS</Course>
+</Student>		
+<Student ID='S200'>
+		<FullName>Abena Attah</FullName>
+		<Age>24</Age>
+		<Gender>Female</Gender>
+		<Course>Data Analytics</Course>
+
+</Student>
+</StudentProfile>

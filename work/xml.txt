@@ -1,0 +1,3 @@
+XML(eXtensible Markup Language) is a markup language that uses customized tags to store, and manipulate data.
+XML is widely used in web configuration files, android interfaces (native), and setting for various servers.
+XML can be transferred to hetereogenous platforms without the data being changed in anyway.

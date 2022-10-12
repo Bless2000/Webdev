@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<HTML>
+<Head><Title>Squares & rectangles</Title>
+
+    <Canvas id="MyCan" height=700 width=700 style="border: 5px black solid;position:absolute;top:120px;left:550px"></Canvas>
+
+</Head>
+
+<Body>
+    <Script>
+        let id = document.getElementById("MyCan");
+        let display = id.getContext("2d");
+
+        //Perfect Square
+        display.fillRect(150,150,150,150);
+
+        //rectangles
+        display.rect(150,350,500,200);
+        display.stroke();
+
+        display.strokeRect(350,150,150,150);
+
+        display.clearRect(195,175,50,50);
+    </Script>
+
+</Body>
+
+</HTML>

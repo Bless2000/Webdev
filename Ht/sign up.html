@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/sign up.css">
+	<title>Sign Up</title>
+	<script type="text/javascript">
+		var name, last, month, day, year, pass, con, gender, contact, num;
+
+		function Confirm()
+		{
+			name= document.getElementById("name").value;
+			last= document.getElementById("last").value;
+			month= document.getElementById("month").value;
+			day= document.getElementById("day").value;
+			year= document.getElementById("year").value;
+			pass= document.getElementById("pass").value;
+			con= document.getElementById("con").value;
+			gender= document.getElementById("gender").value;
+			contact= document.getElementById("contact").value;
+			num= document.getElementById("num").value;
+
+			if(name=="")
+			{
+				alert("Enter your first name");
+			}
+			else if(last=="")
+			{
+				alert("Enter your last name");
+			}
+			else if(month=="Month")
+			{
+				alert("Enter Date of Birth");
+			}
+			else if(day=="Day")
+			{
+				alert("Enter Date of Birth");
+			}
+			else if(year=="Year")
+			{
+				alert("Enter Date of Birth");
+			}
+			else if(pass=="")
+			{
+				alert("Enter your new password");
+			}
+			else if (con=="")
+			{
+				alert("Confirm your new password");
+			}
+			else if(con!=pass)
+			{
+				alert("This needs to be the same as your password");
+			}
+			else if(gender=="")
+			{
+				alert("Choose your gender");
+			}
+			else if(contact=="country")
+			{
+				alert("Select your country code");
+			}
+			else if(num=="")
+			{
+				alert("Enter your phone number");
+			}
+			else if(isNaN(num))
+			{
+				alert("Please enter your phone number");
+			}
+
+			else
+			{
+				alert("GREAT!! you signed up ");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="hero">
+		<h1>SIGN <span>UP</span></h1>
+		<p class="head">Register Here</p>
+	</div>
+		<hr><br>
+
+
+		<div class="sign">
+			<label class="label">Name</label><br>
+			<input type="text" id="name" placeholder="First Name">
+			<input type="text" id="last" placeholder="Last Name"><br><br>
+
+			<label class="label">Date of Birth</label><br>
+			<select id="month">Month<option>Month</option>
+			<option>January</option>	<option>February</option>
+			<option>March</option>	<option>April</option>
+			<option>May</option>	<option>June</option>
+			<option>July</option>	<option>August</option>
+			 <option>September</option>	<option>October</option>
+			 <option>November</option>	<option>December</option>
+			 </select>	
+
+			 <select id="day">Day
+			 <option>Day</option>	<option>1</option>
+			 <option>2</option>		<option>3</option>
+			 <option>4</option>		<option>5</option>
+			 <option>6</option>		<option>7</option>
+			 <option>8</option>		<option>9</option>
+			 <option>10</option>	<option>11</option>
+			 <option>12</option>	<option>13</option>
+			 <option>14</option>	<option>15</option>
+			 <option>16</option>	<option>17</option>
+			 <option>18</option>	<option>19</option>
+			 <option>20</option>	<option>21</option>
+			 <option>22</option>	<option>23</option>
+			 <option>24</option>	<option>25</option>
+			 <option>26</option>	<option>27</option>
+			 <option>28</option>	<option>29</option>
+			 <option>30</option>	<option>31</option>
+			 </select>
+
+			  <select id="year">year
+			 <option>Year</option>	<option>1991</option>
+			 <option>1992</option>		<option>1993</option>
+			 <option>1994</option>		<option>1995</option>
+			 <option>1996</option>		<option>1997</option>
+			 <option>1998</option>		<option>1999</option>
+			 <option>2000</option>	<option>2001</option>
+			 <option>2002</option>	<option>2003</option>
+			 <option>2004</option>	<option>2005</option>
+			 <option>2006</option>	<option>2007</option>
+			 <option>2008</option>	<option>2009</option>
+			 <option>2010</option>	<option>2011</option>
+			 <option>2012</option>	<option>2013</option>
+			 <option>2014</option>	<option>2015</option>
+			 <option>2016</option>	<option>2017</option>
+			 </select><br><br>
+
+
+
+			<label class="label">Password</label><br>
+			<input type="password" id="pass" placeholder="Enter new Password"><br><br>
+
+			<label class="label">Confirm Password</label><br>
+			<input type="password" id="con" placeholder="Confirm Password"><br><br>
+
+			<label class="label">Gender</label><br>
+			<button>Male <input type="radio" name="gender" id="gender"></button>
+			<button>Female <input type="radio" name="gender" id="gender"></button><br><br>
+
+			<label class="label">Contact</label><br>
+			<select id="contact">country  	<option>country</option>
+			<option>+233</option>
+			<option>+232</option>
+			<option>+223</option>
+			<option>+231</option>
+			<option>+235</option>
+		</select>
+
+			<input type="text" id="num" placeholder="Enter number">
+			<br><br>
+
+			<label class="label">Email</label><br>
+			<input type="text" id="email" placeholder="Enter email(optional)">
+
+
+			<p class="end">By clicking on the sign up button you agree to all <a href="">terms</a> and <a href="">conditions</a>. You will receive an SMS shortly confirming your Registration </p>
+
+			<button onclick="Confirm()" class="button">Sign Up</button>
+		</div>	
+
+
+		
+
+</body>
+</html>

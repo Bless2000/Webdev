@@ -1,0 +1,95 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	background-image: url("./img/background2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero
+{
+	background: black;
+	color:#a1261d ;
+	width: 100%;
+}
+
+h1
+{
+	font-size: 50px;
+	font-family: Lobster ;
+	text-align: center;
+	line-height: 60px;
+}
+
+.head
+{
+	font-size: 25px;
+	text-align: center;
+	font-family: Raleway;
+}
+
+.sign
+{
+	border-radius: 20px;
+	background: #242020;
+	margin-left: 40%;
+	margin-top: 35px;
+	padding: 20px;
+	width: 340px;
+	color: white;
+}
+
+label
+{
+	font-family: Varela Round;
+}
+
+input
+{
+	border-radius: 6px;
+	font-family: Varela Round;
+	font-size: 12px;
+
+}
+button
+{
+	border-radius: 6px;
+	font-family: Varela Round;
+	font-size: 12px;
+	margin: 0 7px;	
+}
+select
+{
+	border-radius: 6px;
+	font-family: Varela Round;
+	font-size: 12px;
+	margin: 0 7px;
+}
+option 
+{
+	border-radius: 6px;
+	font-family: Varela Round;
+	font-size: 12px;
+}
+
+.end
+{
+	margin-top: 5%;
+	font-family: Varela Round;
+	font-size: 16px;
+}
+.button
+{
+	width: 100%;
+	background: #6e1616;
+	color: black;
+	border-color: #6e1616;
+	margin-top: 10px;
+	cursor: pointer;
+}

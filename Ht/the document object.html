@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Document Object </title>
+
+	<script type="text/javascript">
+		function DOne()
+		{
+			document.bgColor = "#A598CE";
+		}
+		function DTwo()
+		{
+			document.fgColor = "white";
+		}
+		function DLink1()
+		{
+			document.aLinkColor = "black";
+		}
+		function DLInk2()
+		{
+			document.vLinkColor = "red";
+		}
+		function DLink3()
+		{
+			document.LinkColor = "white";
+		}
+	</script>
+</head>
+<body>
+	<h1>The Document Properties & Methods</h1>
+	<script type="text/javascript">
+		document.write("<font size=5>")
+		document.writeln("The title of the document is "+document.title+"<br>");
+		document.writeln("The document was last modified on "+document.lastModified);
+		document.write("</font>");
+	</script>
+	<br><br><a href="The window Object.html
+	" style="font-size:25">My Link</a><br><br>
+	<br><br>
+
+	<center>
+		<input type="button" value="Change Background" onclick="DOne()"></input>
+		<input type="button" value="Change Foreground" onclick="DTwo()"></input>
+		<input type="button" value="Active Link Color" onclick="=DLink1()"></input>
+		<input type="button" value="Visited link Color" onclick="DLink2()"></input>
+		<input type="button" value="Link Color" onclick="DLink3()"></input>
+	</center>	
+</body>
+</html>

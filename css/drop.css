@@ -1,0 +1,201 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+.menu
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+nav
+{
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	position: rlative;
+	background: lightseagreen;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+}
+
+nav ul
+{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li 
+{
+	list-style: none;
+	line-height: 70px;
+}
+
+
+nav ul li a 
+{
+	text-decoration: none;
+	font-family: calibri;
+}
+
+nav ul li a:hover
+{
+	color: white;
+}
+
+nav p
+{
+	font-family: nunito;
+	font-size: 32px;
+	line-height: 60px;
+	padding: 0 20px;
+	cursor: pointer;
+	color: red;
+}
+
+.img
+{
+	width: 35%;
+	height: 75%;
+	position: absolute;
+	right: 15%;
+	bottom: 50px;
+}
+
+.img img
+{
+	height: 100%;
+	position: absolute;
+	right: 100%;
+	bottom: 0;
+	cursor: pointer;
+	transition: left 1s;
+	padding: 0;
+}
+
+.img:hover
+{
+	left: 55%;
+}
+
+
+
+label	
+{
+	display: inline-block;
+	font-family:  Montserrat Thin;
+	font-size: 20px;
+	margin: 3px;
+}
+.form
+{
+	border-radius: 10px;
+	background: lightgrey;
+	color: black;
+	width: 298px;
+	height: 65%;
+	padding: 4px;
+	margin-top: 10%;
+	margin-left: 3%;
+	
+}
+
+h2
+{
+	text-align: center;
+	font-family:  Montserrat Thin;
+	font-size: 30px;
+	color: blue;
+}
+#submit
+{
+	width: 45%;
+	margin-top: 4px;
+	background: blue;
+	color: white;
+	border-radius: 5px;
+	font-family: nunito;
+	border-color: blue;
+	cursor: pointer;
+	outline: none;
+
+}
+#clear
+{
+	width: 45%;
+	margin-top: 4px;
+	background: blue;
+	color: white;
+	border-radius: 5px;
+	font-family: nunito;
+	border-color: blue;
+	cursor: pointer;
+	outline: none;
+}
+span 
+{
+	color: red;
+}
+button
+{
+	width: 290px;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 10px;
+	background: red;
+	border-radius: 7px;
+	border-color: red;
+	cursor: pointer;
+	outline: none;
+}
+button a 
+{
+	text-decoration: none;
+	color: white;
+	font-family: nunito;
+}
+.foot
+{
+	width: 100%;
+	height: 40%;
+	margin-top: 275px;
+	padding-bottom: 70px;
+	background: lightgrey;
+}
+
+ul
+{
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	width: 100%;
+}
+
+ul li  
+{
+	list-style: none;
+
+}
+ul li a 
+{
+	text-decoration: none;
+	line-height: 50px;
+	font-family: nunito;
+	color: black;
+}
+
+ul li a:hover
+{
+	color: white;
+}
+
+hr 
+{
+	margin-bottom: 10px;
+	
+}

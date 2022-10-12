@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<HTML>
+<Head><Title>Colours</Title>
+
+    <Canvas id="MyCan" height=700 width=700 style="border: 5px black solid;position:absolute;top:120px;left:550px"></Canvas>
+
+</Head>
+
+<Body>
+    <Script>
+        let id = document.getElementById("MyCan");
+        let display = id.getContext("2d");
+
+        //Perfect Square
+        display.fillStyle = "#56CDEE";
+        display.fillRect(150,150,150,150);
+
+        //Perfect Square
+        display.strokeStyle = "red";
+        display.strokeRect(300,300,150,150);
+
+        //Perfect Square
+        display.shadowBlur = 50;
+        display.shadowColor = "yellow";
+        display.fillStyle = "#000";
+        display.fillRect(450,450,150,150);
+
+
+    </Script>
+
+</Body>
+</HTML>

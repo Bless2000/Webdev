@@ -1,0 +1,25 @@
+.container .product_box
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+ .product
+{
+	border: 3px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	background: white;
+	flex: 1 1 30rem;
+	cursor: pointer;
+}
+
+.product:hover
+{
+	border: 2px solid rgba(0, 0, 0, 1.0);
+	padding: 10px;
+	transition: .4s;
+}
